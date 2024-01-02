@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div id="calculator">
+    <input type="text" id="display" >
+      <div class="button_1">
+        <button onclick="CurrentDisplay +='(';
+        changeDisplay();
+        ">(</button>
+        <button onclick="CurrentDisplay +=')';
+        changeDisplay();
+        ">)</button>
+        <button onclick="CurrentDisplay +='.';
+        changeDisplay();
+        ">.</button>
+        <button onclick="CurrentDisplay ='';
+        changeDisplay();
+        ">C</button>
+      </div>
+      <div class="button_2">
+        <button onclick="CurrentDisplay += '1';
+        changeDisplay();
+        ">1</button>
+        <button onclick="CurrentDisplay +='2';
+        changeDisplay();
+        ">2</button>
+        <button onclick="CurrentDisplay +='3';
+        changeDisplay();
+        ">3</button>
+        <button onclick="CurrentDisplay +='+';
+        changeDisplay();
+        ">+</button>
+      </div>
+      <div class="button_3">
+        <button onclick="CurrentDisplay += '4';
+        changeDisplay();
+        ">4</button>
+        <button onclick="CurrentDisplay +='5';
+        changeDisplay();
+        ">5</button>
+        <button onclick="CurrentDisplay +='6';
+         changeDisplay();
+         ">6</button>
+        <button onclick="CurrentDisplay +='-';
+        changeDisplay();
+        ">-</button>
+      </div>
+      <div class="button_4">
+        <button onclick="CurrentDisplay +='7';
+        changeDisplay();
+        ">7</button>
+        <button onclick="CurrentDisplay +='8'; 
+        changeDisplay();
+        ">8</button>
+        <button onclick="CurrentDisplay +='9';
+        changeDisplay();
+        ">9</button>
+        <button onclick="CurrentDisplay +='/'; 
+        changeDisplay();
+        ">/</button>
+      </div>  
+      <div class="button_5">
+        <button onclick="CurrentDisplay +='0';
+        changeDisplay();
+        ">0</button>
+        <button onclick="CurrentDisplay +='%';
+        changeDisplay();
+        ">%</button>
+        <button onclick="CurrentDisplay +='*';
+        changeDisplay();
+        ">*</button>
+        <button onclick="
+        CurrentDisplay=eval(CurrentDisplay);
+        changeDisplay();
+        ">=</button>
+      </div>  
+  </div>
+</body>
+<script src="Calculator.js"></script>
+</html>
